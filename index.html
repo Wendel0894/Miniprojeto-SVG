@@ -5,17 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MiniProjeto SVG</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+
+   <section id="bloco-principal">
+
+       <div id="bloco-pesquisa">
+             <div id="bloco-pesq-cidade"> 
+
+                <img src="imagens/logo.png" id="logo">
+                <p>Digite o nome da cidade</p>
+                <input type="text" id="cidade">
+                <button  onclick="gerarSvg()">
+                    Localizar
+                    <img src="imagens/icone.png" alt="">
+                </button>
+
+            </div>
+       </div>
+
+       <div id="bloco-mapa">
+           <div id = "SVG">
+          
+           </div>
+       </div>
+
+   </section>
+
+
+
+
+
+
+    <!--
     <div>
         <input type="text" id="cidade">
-        <input type="button" value="GerarSVG" onclick="gerarSvg()">
+        <input type="button" value="GerarSVG" onclick="gerarSvg()" id="b">
     </div>
     <div id = "SVG">
-
+          
     </div>
-
+    -->
 
     <script src="gerarSVG.js"></script>
 

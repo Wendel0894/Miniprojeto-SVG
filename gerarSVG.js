@@ -37,7 +37,7 @@ async function gerarSvg() {
 function mostrarSvg (pathCidade, pathEstado, viewBoxEstado, dadosCidade) {
     document.getElementById('SVG').innerHTML =
 
-    `<svg width="250" height="250" viewBox="${viewBoxEstado[0].getviewboxestado}">  
+    `<svg  viewBox="${viewBoxEstado[0].getviewboxestado}">  
         <path D="${pathEstado[0].st_assvg}"
               stroke= "black"
               stroke-width = "0.01"
@@ -50,7 +50,7 @@ function mostrarSvg (pathCidade, pathEstado, viewBoxEstado, dadosCidade) {
         /> 
     </svg>
     
-    <div> 
+    <div id="texto"> 
         <h2>
             Localizada no estado da(o) ${dadosCidade[0].estado}, a cidade de ${dadosCidade[0].nome} (cod: ${dadosCidade[0].codigo}) 
             possui uma area de aproximadamente ${dadosCidade[0].area} km.
